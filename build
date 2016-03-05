@@ -1,0 +1,3 @@
+#!/bin/sh -e
+nasm -f macho -o $1.o $1.s
+ld -e _start -o $1.a $1.o
