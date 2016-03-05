@@ -44,12 +44,6 @@ do_compare_exit:
     ret
 
 _start:
-
-    pop     eax
-    pop     ebx
-    mov     ebp,                esp
-    and     esp,                0xFFFFFFF0
-
     mov eax, 0
     call do_compare
 

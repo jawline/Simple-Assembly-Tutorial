@@ -49,12 +49,6 @@ fibs_exit:
     ret
 
 _start:
-
-    pop     eax
-    pop     ebx
-    mov     ebp,                esp
-    and     esp,                0xFFFFFFF0
-
     mov eax, 6
     call fibs
     call print_eax
