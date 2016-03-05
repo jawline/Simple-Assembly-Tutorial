@@ -25,7 +25,7 @@ fact:
 
 fact_base_case:
     mov eax, 1
-    ret
+    jmp fact_exit
 
 fact_recurse:
     push eax
@@ -34,6 +34,8 @@ fact_recurse:
     mov ebx, eax
     pop eax
     imul eax, ebx
+
+fact_exit:
     ret
 
 _start:
