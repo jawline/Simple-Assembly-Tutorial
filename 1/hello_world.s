@@ -16,6 +16,5 @@ _start:
     int     0x80
 
 section .data
-
-msg:    db      "Hello, world!", 10
-.len:   equ     $ - msg
+    msg:    db      "Hello, world!", 10
+    .len:   equ     $ - msg
