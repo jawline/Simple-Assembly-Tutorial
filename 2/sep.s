@@ -2,7 +2,7 @@ global _start
 
 section .text
 
-_print_hello:
+print_hello:
 
     push    dword msg.len
     push    dword msg
@@ -14,19 +14,17 @@ _print_hello:
 
     ret
 
-_start:
-
-    call _print_hello
-
+exit:
     push    dword 0
     mov     eax, 1
     sub     esp, 12
     int     0x80
 
+_start:
+    call print_hello
+    jmp exit
+
 section .data
 
 msg:    db      "Hello, world!", 10
 .len:   equ     $ - msg
-
-stupid: db      "Stupid Stupid", 13
-.len: equ $ - msg
