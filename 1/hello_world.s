@@ -1,7 +1,8 @@
 global _start
-
 section .text
+
 _start:
+
     push    dword msg.len
     push    dword msg
     push    dword 1

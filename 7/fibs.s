@@ -26,8 +26,6 @@ fibs:
     cmp eax, 1
     je fibs_exit
 
-    jmp fibs_recurse
-
 fibs_recurse:
     push ebx ;EBX used to store temp data
 
@@ -49,7 +47,7 @@ fibs_exit:
     ret
 
 _start:
-    mov eax, 6
+    mov eax, 3
     call fibs
     call print_eax
 

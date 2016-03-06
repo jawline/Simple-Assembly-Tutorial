@@ -1,9 +1,7 @@
 global _start
-
 section .text
 
 print_hello:
-
     push    dword msg.len
     push    dword msg
     push    dword 1
