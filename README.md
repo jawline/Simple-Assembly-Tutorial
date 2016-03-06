@@ -1,1 +1,1 @@
-Resources for a simple assembly tutorial
+Resources for a set of tutorials
